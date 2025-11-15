@@ -1,0 +1,7 @@
+# Ignore everything
+*
+!frontend/
+!.gitignore
+
+# But don't ignore files in frontend
+!frontend/**

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-navy text-white font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global utilities */
+@layer components {
+  .card {
+    @apply bg-navy-light rounded-lg p-6 border border-navy-lighter;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-navy-lighter hover:bg-navy-lighter/80 rounded-lg text-white font-medium transition border border-navy-lighter;
+  }
+
+  .input-field {
+    @apply bg-navy-lighter border border-navy-lighter rounded-lg px-4 py-2 text-white placeholder:text-gray-400 focus:outline-none focus:border-blue-500;
+  }
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}

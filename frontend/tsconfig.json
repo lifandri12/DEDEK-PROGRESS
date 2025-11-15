@@ -17,13 +17,12 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "types": [
-      "node",
-      "jest",
-      "@testing-library/jest-dom"
+      "node"
     ],
     "allowJs": true,
     "incremental": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "**/*.ts",

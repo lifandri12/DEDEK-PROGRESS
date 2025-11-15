@@ -121,10 +121,11 @@ export default function Equipment() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="muscle-group" className="block text-sm font-medium text-gray-300 mb-2">
                   Muscle Group <span className="text-red-400">*</span>
                 </label>
                 <select
+                  id="muscle-group"
                   required
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}

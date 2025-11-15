@@ -2,6 +2,7 @@
 *
 !frontend/
 !.gitignore
+!vercel.json
 
 # But don't ignore files in frontend
 !frontend/**
